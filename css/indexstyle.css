@@ -1,0 +1,529 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+body
+{
+    background-color: #f5f5f5;
+    
+}
+
+.div-space
+{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    
+}
+.title-h3-section{ 
+
+    font-size:3rem ;
+    font-weight:bold ;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    margin-bottom: 0.5rem;
+    padding: 20px;
+}
+.title-p-section
+{
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4e4e4e;
+    margin-bottom: 1rem;
+}
+.underline-title-section
+{
+    width: 100px;
+    height: 5px;
+    background-color: #CC9544;
+    margin: 0 auto;
+ 
+}
+/* start nav style */
+.bg-gold
+{
+    background-color: #CC9544;
+    ;
+}
+.nav-logo
+{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.nav-item 
+{
+   position: relative;
+}
+.nav-item a
+{
+    font-size: 23px;
+    font-weight: 900;
+    padding: 10px 20%;
+    transition: all 2s;
+    color: #fff;
+   position: relative;
+   transition: all 1.5s;
+}
+.nav-item a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.nav-item a:hover{
+     transform: scale(1.1);
+     transition: all 2s;
+}
+
+.underline-li-nav
+{
+    position: absolute;
+    bottom:0px;
+    right:15px;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/* end nav style */
+/* start home style */
+.bg-image-background
+{
+    background-image: url(../image/DALL·E\ 2025-03-14\ 23.28.30\ -\ A\ highly\ realistic\ photograph-like\ image\ of\ the\ Pyramids\ of\ Giza\ in\ Egypt\,\ featuring\ the\ three\ main\ pyramids—Khufu\,\ Khafre\,\ and\ Menkaure—under\ a\ brigh.webp);
+  background-size:cover;
+  width: 100%;
+
+}
+.cover-home
+{
+    top: 0;
+    left: 0;
+    background-color:rgba(204, 149, 68,0.2);
+    z-index: 60;
+}
+.caption-home
+{
+    z-index: 90;
+}
+.caption-home h1{
+    font-size: 4.5rem ;
+    line-height: 86.4px;
+}
+
+
+@media screen and (max-width:786px)
+{
+    .caption-home h1{
+        font-size: 2.5rem ;
+        line-height: 60px;
+    }
+}
+/* end home style */
+/* start about style */
+
+.about
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.about-image img
+{
+    margin-left: 10px;
+    margin-bottom: 32px;
+}
+.inf-about-li
+{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e1e1e; 
+}
+.inf-about-li .inf-about-span
+{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+.about-div-h5 h5
+{
+    font-size: 2rem;
+    color: #1e1e1e;
+    font-weight: 500;
+    line-height: 1.2;
+    position: relative;
+}
+.about-div-h5 h5::after
+{
+   content: "";
+   position: absolute;
+   bottom:0px;
+   right:0;
+   width:80px;
+   height: 3px;
+   background-color: #CC9544;
+  
+}
+
+.part2-about-p
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+/* end about style */
+/* start info style */
+.card-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e1e1e;
+    padding: .4rem 0;
+}
+.circle-icon
+{
+    width: 130px;
+    height: 130px;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.55;
+    border: solid 10px #CC9544;
+    margin: auto;
+}
+.circle-icon img{
+ border-radius: 50%;
+}
+.card:hover .circle-icon
+{
+    transform:rotateX(360deg);
+    transition: all 3s;
+    border: solid 10px #aa7422 ; 
+}
+/* end info style */
+
+/* start counter style */
+.counter-div
+{
+    background-image: url(../image/DALL·E\ 2025-03-16\ 00.41.41\ -\ A\ detailed\ historical\ scene\ from\ the\ Ptolemaic\ era\ in\ Egypt.\ The\ image\ features\ the\ Pharos\ Lighthouse\ of\ Alexandria\ and\ the\ Great\ Library\ of\ Alexandri.webp);
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-size: cover;
+    padding: 8rem 0;
+}
+.cover-counter
+{
+ background-color:rgba(214, 186, 145, 0.3);
+ top: 0;
+ left: 0;
+ z-index: 50;
+}
+.counter-tex-div
+{
+  position: relative;
+  z-index: 210;
+}
+.section-card-icon
+{
+
+ width: 80px;
+ height: 80px;
+ font-size: 2rem;
+ font-weight: 400;
+ line-height: 1.55;
+ border: solid 10px #CC9544 ;
+ margin: auto;
+ color: #fff;
+ margin-bottom: 1rem;    
+}
+.counter-number
+{
+   color:#fff;
+   font-size: 2rem;
+}
+.counter-text
+{
+    color:#fff;
+    text-transform: uppercase;
+}
+/* end counter style */
+/* start carousel style */
+.cover-carousel-section
+{
+    background-image: url(../image/DALL·E\ 2025-03-21\ 22.32.44\ -\ A\ realistic\ and\ beautiful\ ancient\ Egyptian\ scene\ featuring\ hieroglyphs\,\ statues\,\ and\ a\ golden-lit\ temple\ interior.\ The\ image\ should\ have\ a\ small\,\ deta.webp);
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-size: cover;
+    padding: 8rem 0;
+}
+.cover-counter
+{
+ background-color: rgba(204, 149, 68,0.5);
+ top: 0;
+ left: 0;
+ z-index: 50;
+}
+.counter-tex-div
+{
+  position: relative;
+  z-index: 210;
+}
+.carousel-indicators
+{
+   position: relative;
+   top:330px;
+}
+.carousel-indicators li
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* end carousel  style */
+
+/* start blog style */
+.w-40
+{
+    width: 40px;
+}
+.imgblog{
+    background-image: url(../image/Screenshot\ 2025-04-18\ 223530.png);
+    background-size: cover;
+    height: 100vh;
+}
+.h-40
+{
+    height: 40px;
+}
+.text-blog-foter
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1e1e1e
+}
+.blog-adress-card
+{
+    color: #ffffff;
+    left: 57%;
+    top:-60%;
+    transform: translate(-50% ,0);
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+}
+.w-30
+{
+    width: 30%;
+}
+#blog h5
+{
+    transition: color 1s;
+    color: black;
+}
+#blog h5:hover 
+{
+  color:#CC9544;
+} 
+#blog .name-small:hover
+{
+  color:#CC9544;
+} 
+
+#blog .left-small{
+
+    cursor: pointer;
+}
+
+#blog .left-small:hover {
+    
+    cursor: pointer;
+}
+#blog .left-small:hover i{
+    color:#CC9544;
+}
+#blog .right-small:hover i{
+    color:black;
+}
+
+/* end blog  style */
+/* start contact style */
+.cover-carousel-section2
+{
+    background-color: #f5f5f5;
+    background-size: cover;
+    padding: 8rem 0;
+}
+.button-form-contact
+{ 
+    position: relative;
+    left: 50%;
+    transform: translate(-50% ,0);
+    background: #CC9544;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 1.2rem;
+    border: solid 4px white;
+    transition: all 0.5s;
+}
+.button-form-contact:hover
+{
+    background-color: #CC9544;
+    border: solid 4px #8b5707  ;
+}
+.contact-p
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+.contact-text-icon
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #4e4e4e;
+}
+.cover-carousel-section2 i
+{
+    color: #CC9544;;
+}
+.twasol
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 50%;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #CC9544; 
+    transition: all 0.8s;
+}
+.twasol:hover
+{
+    background-color:#CC9544;
+    color:#fff;
+    box-shadow: 0 0 0 3px #fff; 
+}
+.twasol:hover i
+{
+    color:#fff;
+}
+/* end  contact style */
+/* start footer style */
+.div-footerr
+{
+    padding-top:25px ;
+    padding-bottom:25px ;
+    background-color:#CC9544;
+    color:#fff;
+}
+/* end footer style */
+
+
+
+
+/* start watched style */
+.picture1{
+  background-image: url(../image/Screenshot\ 2025-04-18\ 223530.png); 
+  background-size: 100% 100%; 
+  background-attachment: fixed;
+  
+}
+  
+.title_section{
+  text-align: center;
+}
+
+.title{
+  color: #000000;
+  font-size: 48px;
+  padding: 70px;
+}  
+
+.maintitle{
+  font-size: 16px;
+  color: #4e4e4e;
+ margin: 16px;
+}
+
+.service-hr1{
+ 
+    width: 100px;
+    height: 5px;
+    background-color: #CC9544;
+    margin: 0 auto;
+ 
+  
+  
+}
+
+.img-blog{
+  height: 100%;
+  width: 95%;
+}
+
+.img2{
+  color: black;
+  text-align: center;
+}
+.img2:hover{
+  color:chocolate
+}
+
+
+.img2{
+  color: black;
+  text-align: center;
+}
+.img2:hover{
+  color:chocolate
+}
+  
+.card-text1{
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  }
+  
+.card-text1:hover{
+  
+text-align: center;
+  
+}
+  
+.pp{
+  text-align: center;
+}
+.rrr{
+  
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    display: inline-block;
+   padding-right: 40px;
+    
+    
+}
+
+.font1{
+    color: #bd782f;
+    padding-left: 100px;
+    font-size: 25px;
+}
+/* end watched style */
